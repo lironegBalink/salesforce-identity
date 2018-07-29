@@ -27,7 +27,7 @@
   
   <body>
   	<div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;"></div>
-  	<a href="https://balink-poc-developer-edition.eu8.force.com/CommunitiesSelfReg" style="position: absolute; top: 20px;right: 80px;">Sign up</a>
+  	<a href="https://balink-poc-developer-edition.eu8.force.com/CommunitiesSelfReg" style="position: absolute; top: 30px;right: 125px;">Sign up</a>
     <header>
       <div class="masthead-elements-row-1">
         <div class="element-left"></div>
