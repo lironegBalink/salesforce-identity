@@ -31,6 +31,7 @@
       <div class="masthead-elements-row-1">
         <div class="element-left"></div>
         <div class="element-middle">
+        	<a href="https://balink-poc-developer-edition.eu8.force.com/CommunitiesSelfReg">Sign up</a>
           <img class="logo" src="images/fix-logotype.png" alt="Fix">
           <br>
           <span class="logo-text">Fine Coffee Kits</span>
