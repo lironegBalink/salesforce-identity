@@ -47,7 +47,16 @@
 	                    console.log(access_token)
 	        if(access_token) {
 	            var url = `${'https://balink-poc-developer-edition.eu8.force.com/services/oauth2/userinfo'}`;
-	        	var headers = { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + access_token} };
+	        	var headers = { 
+	        		method: 'GET', 
+	        		headers: { 
+	        			'Accept': 'application/json', 
+	        			'Content-Type': 'application/json', 
+	        			'Authorization': 'Bearer ' + access_token, 
+	        			'Access-Control-Allow-Origin': '*'
+	        		},
+	        		mode: 'no-cors'
+	        	};
 	            var response = await fetch( `${url}`, headers );
 	            var body = await response.json();
 	            console.log(body)
