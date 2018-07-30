@@ -9,8 +9,6 @@
     <link href="reset.css" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,600" type="text/css" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
-    
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	
     <meta name="salesforce-community" content="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>">
     <meta name="salesforce-client-id" content="<?php echo getenv('SALESFORCE_CLIENT_ID');?>">
@@ -26,13 +24,15 @@
 	<link href="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>/servlet/servlet.loginwidgetcontroller?type=css" rel="stylesheet" type="text/css" />
     <script src="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>/servlet/servlet.loginwidgetcontroller?type=javascript_widget" async defer></script>
 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
     <script>
 	    //Wait for jquery to load before executing code
-	    $(document).ready(async () => {
+	    addEventListener('JqueryLoaded', async function(e) {
 	        var getUrlParameter = function getUrlParameter(sParam) {
 	            var sPageURL = decodeURIComponent(window.location.href);
 	            var hash = sPageURL.substring(sPageURL.indexOf("#")+1);
-	            console.log(hash)
 	            var sURLVariables = hash.split('&');
 	            var sParameterName, i;
 	            for (i = 0; i < sURLVariables.length; i++) {
@@ -43,7 +43,7 @@
 	            }
 	        };
 	        var access_token = getUrlParameter('access_token');
-	        console.log(access_token)
+	                    console.log(access_token)
 	        if(access_token) {
 	            var url = `${'https://balink-poc-developer-edition.eu8.force.com/services/oauth2/userinfo'}`;
 	        	var headers = { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + access_token} };
@@ -54,7 +54,7 @@
 	            var text = document.createTextNode('Hi, ' + body.name + '! Your Salesforce ID is: ' + body.user_id );
 	            paragraph.appendChild(text);
 	        }
-	    });
+	    }, false);
     </script>
 
   </head>
