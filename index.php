@@ -41,7 +41,7 @@
 	            }
 	        };
 	        var access_token = getUrlParameter('access_token');
-	                    console.log(access_token)
+	        console.log(access_token)
 	        if(access_token) {
 	            var url = `${'https://balink-poc-developer-edition.eu8.force.com/services/oauth2/userinfo'}`;
 	        	var headers = { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + access_token} };
@@ -52,7 +52,7 @@
 	            var text = document.createTextNode('Hi, ' + body.name + '! Your Salesforce ID is: ' + body.user_id );
 	            paragraph.appendChild(text);
 	        }
-	    };
+	    });
     </script>
 
   </head>
