@@ -52,8 +52,7 @@
 	        		headers: { 
 	        			'Accept': 'application/json', 
 	        			'Content-Type': 'application/json', 
-	        			'Authorization': 'Bearer ' + access_token, 
-	        			'Access-Control-Allow-Origin': '*'
+	        			'Authorization': 'Bearer ' + access_token
 	        		},
 	        		mode: 'no-cors'
 	        	};
