@@ -29,7 +29,7 @@
 
     <script>
 	    //Wait for jquery to load before executing code
-	    addEventListener('JqueryLoaded', async function(e) {
+	    $(document).ready(async () => {
 	        var getUrlParameter = function getUrlParameter(sParam) {
 	            var sPageURL = decodeURIComponent(window.location.href);
 	            var hash = sPageURL.substring(sPageURL.indexOf("#")+1);
@@ -54,7 +54,7 @@
 	            var text = document.createTextNode('Hi, ' + body.name + '! Your Salesforce ID is: ' + body.user_id );
 	            paragraph.appendChild(text);
 	        }
-	    }, false);
+	    });
     </script>
 
   </head>
