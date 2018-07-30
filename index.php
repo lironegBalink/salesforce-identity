@@ -29,7 +29,8 @@
 
     <script>
 	    //Wait for jquery to load before executing code
-	    $(document).ready(async () => {
+	   	$(window).load(async () => {
+	    	console.log('HERE')
 	        var getUrlParameter = function getUrlParameter(sParam) {
 	            var sPageURL = decodeURIComponent(window.location.href);
 	            var hash = sPageURL.substring(sPageURL.indexOf("#")+1);
