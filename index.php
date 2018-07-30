@@ -52,9 +52,10 @@
 	        		headers: { 
 	        			'Accept': 'application/json', 
 	        			'Content-Type': 'application/json', 
-	        			'Authorization': 'Bearer ' + access_token
-	        		},
-	        		mode: 'no-cors'
+	        			'Authorization': 'Bearer ' + access_token, 
+	        			'Access-Control-Allow-Origin': '*',
+	        			"Access-Control-Allow-Credentials" : true 
+	        		}
 	        	};
 	            var response = await fetch( `${url}`, headers );
 	            var body = await response.json();
