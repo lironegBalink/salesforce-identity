@@ -23,6 +23,37 @@
     <meta name="salesforce-logout-handler" content="onLogout">
 	<link href="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>/servlet/servlet.loginwidgetcontroller?type=css" rel="stylesheet" type="text/css" />
     <script src="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>/servlet/servlet.loginwidgetcontroller?type=javascript_widget" async defer></script>
+
+    <script>
+	    //Wait for jquery to load before executing code
+	    addEventListener('JqueryLoaded', async function(e) {
+	        var getUrlParameter = function getUrlParameter(sParam) {
+	            var sPageURL = decodeURIComponent(window.location.href);
+	            var hash = sPageURL.substring(sPageURL.indexOf("#")+1);
+	            var sURLVariables = hash.split('&');
+	            var sParameterName, i;
+	            for (i = 0; i < sURLVariables.length; i++) {
+	                sParameterName = sURLVariables[i].split('=');
+	                if (sParameterName[0] === sParam) {
+	                    return sParameterName[1] === undefined ? true : sParameterName[1];
+	                }
+	            }
+	        };
+	        var access_token = getUrlParameter('access_token');
+	                    console.log(access_token)
+	        if(access_token) {
+	            var url = `${'https://balink-poc-developer-edition.eu8.force.com/services/oauth2/userinfo'}`;
+	        	var headers = { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + access_token} };
+	            var response = await fetch( `${url}`, headers );
+	            var body = await response.json();
+	            console.log(body)
+	            var paragraph = document.getElementById("user");
+	            var text = document.createTextNode('Hi, ' + body.name + '! Your Salesforce ID is: ' + body.user_id );
+	            paragraph.appendChild(text);
+	        }
+	    }, false);
+    </script>
+
   </head>
   
   <body>
@@ -34,6 +65,8 @@
         <div class="element-middle">
           <br>
           <span class="logo-text">Louis Vuitton</span>
+          <br>
+          <span id="user" class="logo-text"></span>
         </div>
         <div class="element-right">
         </div>
