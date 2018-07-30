@@ -90,10 +90,6 @@
     </header>
    
     <footer>
-
-      <div class="trailer-logo">
-      </div>
-
       <div class="trailer-links">
         <ul class="internal-links">
           <li><a href="https://heroku.github.io/fix">About</a></li>
@@ -115,7 +111,6 @@
             <span class="social-name">Instagram</span></a></li>
         </ul>
       </div>
-
     </footer>
 	
 

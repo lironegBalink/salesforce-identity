@@ -365,7 +365,7 @@ footer a {
 }
 .trailer-links {
   background-color: #222;
-  padding: 30px 0 20px 0;
+  padding: 20px 0 0 0;
 
   -webkit-box-flex: 0 0 auto;
   -moz-box-flex: 0 0 auto;
@@ -444,7 +444,7 @@ footer a {
     width: 25%;
   }
   .trailer-links {
-    width: 75%;
+    width: 100%;
 
     -webkit-flex-direction: row;
     flex-direction: row;
