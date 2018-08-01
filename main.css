@@ -2,6 +2,12 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,17 +37,38 @@ h1 {
   }
 }
 
+.login-header {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding-left: 30px;
+  background-color: #222;
+  align-items: center;
+}
+
+.login-header .login-elem {
+  margin: 10px;
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.login-header .login-elem img {
+  margin:0;
+  resize:none;
+  position:relative;
+  zoom:1;
+  display:block;
+  height:29px;
+  border-radius: 5px;
+}
+
 header {
   color: white;
 
   height: 250px;
   padding: 40px 20px 20px 20px;
-  background-repeat: no-repeat;
-  background-image: url(images/background.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  
 }
 header .logo {
   width: 86px;
@@ -344,6 +371,10 @@ footer {
   justify-content: flex-start;
   -webkit-align-content: stretch;
   align-content: stretch;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 footer a {
   color: #fff;
@@ -365,7 +396,7 @@ footer a {
 }
 .trailer-links {
   background-color: #222;
-  padding: 20px 0 0 0;
+  padding: 10px 0 10px 0;
 
   -webkit-box-flex: 0 0 auto;
   -moz-box-flex: 0 0 auto;
@@ -389,9 +420,12 @@ footer a {
 }
 .internal-links {
   text-align: center;
-  margin-bottom: 30px;
   font-size: 1rem;
   line-height: 1.8rem;
+
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
 }
 .social-links {
   font-size: 0.7rem;

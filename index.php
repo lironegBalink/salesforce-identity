@@ -71,11 +71,15 @@
   
   <body>
   	<div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;"></div>
-  	<a href="https://balink-poc-developer-edition.eu8.force.com/CommunitiesSelfReg" style="position: absolute; top: 30px;right: 125px;">Sign up</a>
-  	<a href="https://login.salesforce.com/services/auth/sso/00D0N000001bziHUAQ/Line?community=https://balink-poc-developer-edition.eu8.force.com&amp;startURL=%2Fservices%2Foauth2%2Fauthorize%3Fresponse_type%3Dtoken%26client_id%3D3MVG9TSaZ8P6zP1r474LN9_pGmC6bFgzqocTGcnL7BskII.BOIgqTdg..1GQTIa4qm_EuMgpx6Br.hqrgvk9.%26redirect_uri%3Dhttps%3A%2F%2Fembedded-login-demo.herokuapp.com%2F%26state%3Dhttps%3A%2F%2Fembedded-login-demo.herokuapp.com%2F" style="position: absolute; top: 60px;right: 20px;"><img src="https://c.eu8.content.force.com/servlet/servlet.ImageServer?id=0150N000006rkbC&oid=00D0N000001bziH" style="margin:0;resize:none;position:relative;zoom:1;display:block;height:29px;width:28px;top:7px;left:-3px;border-radius: 5px;" class=""></a>
-  	<a href="https://login.salesforce.com/services/auth/sso/00D0N000001bziHUAQ/Facebook?community=https://balink-poc-developer-edition.eu8.force.com&amp;startURL=%2Fservices%2Foauth2%2Fauthorize%3Fresponse_type%3Dtoken%26client_id%3D3MVG9TSaZ8P6zP1r474LN9_pGmC6bFgzqocTGcnL7BskII.BOIgqTdg..1GQTIa4qm_EuMgpx6Br.hqrgvk9.%26redirect_uri%3Dhttps%3A%2F%2Fembedded-login-demo.herokuapp.com%2F%26state%3Dhttps%3A%2F%2Fembedded-login-demo.herokuapp.com%2F" style="position: absolute; top: 60px;right: 20px;"><img src="https://c.eu8.content.force.com/servlet/servlet.ImageServer?id=0150N000006rkek&oid=00D0N000001bziH" style="margin:0;resize:none;position:relative;zoom:1;display:block;height:29px;width:28px;top:7px;left:-43px;border-radius: 5px;" class=""></a>
-  	<a href="https://login.salesforce.com/services/auth/sso/00D0N000001bziHUAQ/WeChat?community=https://balink-poc-developer-edition.eu8.force.com&amp;startURL=%2Fservices%2Foauth2%2Fauthorize%3Fresponse_type%3Dtoken%26client_id%3D3MVG9TSaZ8P6zP1r474LN9_pGmC6bFgzqocTGcnL7BskII.BOIgqTdg..1GQTIa4qm_EuMgpx6Br.hqrgvk9.%26redirect_uri%3Dhttps%3A%2F%2Fembedded-login-demo.herokuapp.com%2F%26state%3Dhttps%3A%2F%2Fembedded-login-demo.herokuapp.com%2F" style="position: absolute; top: 60px;right: 20px;"><img src="https://c.eu8.content.force.com/servlet/servlet.ImageServer?id=0150N000006rkeu&oid=00D0N000001bziH" style="margin:0;resize:none;position:relative;zoom:1;display:block;height:29px;width:28px;top:7px;left:-80px;border-radius: 5px;" class=""></a>
-    <header>
+
+	<div class="login-header">
+		<a class="login-elem" href="https://balink-poc-developer-edition.eu8.force.com/CommunitiesSelfReg">Sign up</a>
+		<a class="login-elem" href="https://login.salesforce.com/services/auth/sso/00D0N000001bziHUAQ/Line?community=https://balink-poc-developer-edition.eu8.force.com&amp;startURL=%2Fservices%2Foauth2%2Fauthorize%3Fresponse_type%3Dtoken%26client_id%3D3MVG9TSaZ8P6zP1r474LN9_pGmC6bFgzqocTGcnL7BskII.BOIgqTdg..1GQTIa4qm_EuMgpx6Br.hqrgvk9.%26redirect_uri%3Dhttps%3A%2F%2Fembedded-login-demo.herokuapp.com%2F%26state%3Dhttps%3A%2F%2Fembedded-login-demo.herokuapp.com%2F"><img src="https://c.eu8.content.force.com/servlet/servlet.ImageServer?id=0150N000006rkbC&oid=00D0N000001bziH"></a>
+		<a class="login-elem" href="https://login.salesforce.com/services/auth/sso/00D0N000001bziHUAQ/Facebook?community=https://balink-poc-developer-edition.eu8.force.com&amp;startURL=%2Fservices%2Foauth2%2Fauthorize%3Fresponse_type%3Dtoken%26client_id%3D3MVG9TSaZ8P6zP1r474LN9_pGmC6bFgzqocTGcnL7BskII.BOIgqTdg..1GQTIa4qm_EuMgpx6Br.hqrgvk9.%26redirect_uri%3Dhttps%3A%2F%2Fembedded-login-demo.herokuapp.com%2F%26state%3Dhttps%3A%2F%2Fembedded-login-demo.herokuapp.com%2F"><img src="https://c.eu8.content.force.com/servlet/servlet.ImageServer?id=0150N000006rkek&oid=00D0N000001bziH"></a>
+		<a class="login-elem" href="https://login.salesforce.com/services/auth/sso/00D0N000001bziHUAQ/WeChat?community=https://balink-poc-developer-edition.eu8.force.com&amp;startURL=%2Fservices%2Foauth2%2Fauthorize%3Fresponse_type%3Dtoken%26client_id%3D3MVG9TSaZ8P6zP1r474LN9_pGmC6bFgzqocTGcnL7BskII.BOIgqTdg..1GQTIa4qm_EuMgpx6Br.hqrgvk9.%26redirect_uri%3Dhttps%3A%2F%2Fembedded-login-demo.herokuapp.com%2F%26state%3Dhttps%3A%2F%2Fembedded-login-demo.herokuapp.com%2F"><img src="https://c.eu8.content.force.com/servlet/servlet.ImageServer?id=0150N000006rkeu&oid=00D0N000001bziH"></a>
+	</div>
+	
+	<header>
       <div class="masthead-elements-row-1">
         <div class="element-left"></div>
         <div class="element-middle">
@@ -95,20 +99,6 @@
           <li><a href="https://heroku.github.io/fix">About</a></li>
           <li><a href="https://heroku.github.io/fix">Support</a></li>
           <li><a href="https://heroku.github.io/fix">Contact Us</a></li>
-        </ul>
-        <ul class="social-links">
-          <li><a href="#">
-            <img class="social-logo" src="images/social/twitter.png" alt="">
-            <span class="social-verb">Follow on</span>
-            <span class="social-name">Twitter</span></a></li>
-          <li><a href="#">
-            <img class="social-logo" src="images/social/facebook.png" alt="">
-            <span class="social-verb">Like Us on</span>
-            <span class="social-name">Facebook</span></a></li>
-          <li><a href="#">
-            <img class="social-logo" src="images/social/instagram.png" alt="">
-            <span class="social-verb">Follow on</span>
-            <span class="social-name">Instagram</span></a></li>
         </ul>
       </div>
     </footer>
