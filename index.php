@@ -73,11 +73,11 @@
   	
 
 	<div class="login-header">
+		<div id="sign-in-link"></div>
 		<a class="login-elem" href="https://balink-poc-developer-edition.eu8.force.com/CommunitiesSelfReg">Sign up</a>
 		<a class="login-elem" href="https://login.salesforce.com/services/auth/sso/00D0N000001bziHUAQ/Line?community=https://balink-poc-developer-edition.eu8.force.com&amp;startURL=%2Fservices%2Foauth2%2Fauthorize%3Fresponse_type%3Dtoken%26client_id%3D3MVG9TSaZ8P6zP1r474LN9_pGmC6bFgzqocTGcnL7BskII.BOIgqTdg..1GQTIa4qm_EuMgpx6Br.hqrgvk9.%26redirect_uri%3Dhttps%3A%2F%2Fembedded-login-demo.herokuapp.com%2F%26state%3Dhttps%3A%2F%2Fembedded-login-demo.herokuapp.com%2F"><img src="https://c.eu8.content.force.com/servlet/servlet.ImageServer?id=0150N000006rkbC&oid=00D0N000001bziH"></a>
 		<a class="login-elem" href="https://login.salesforce.com/services/auth/sso/00D0N000001bziHUAQ/Facebook?community=https://balink-poc-developer-edition.eu8.force.com&amp;startURL=%2Fservices%2Foauth2%2Fauthorize%3Fresponse_type%3Dtoken%26client_id%3D3MVG9TSaZ8P6zP1r474LN9_pGmC6bFgzqocTGcnL7BskII.BOIgqTdg..1GQTIa4qm_EuMgpx6Br.hqrgvk9.%26redirect_uri%3Dhttps%3A%2F%2Fembedded-login-demo.herokuapp.com%2F%26state%3Dhttps%3A%2F%2Fembedded-login-demo.herokuapp.com%2F"><img src="https://c.eu8.content.force.com/servlet/servlet.ImageServer?id=0150N000006rkek&oid=00D0N000001bziH"></a>
 		<a class="login-elem" href="https://login.salesforce.com/services/auth/sso/00D0N000001bziHUAQ/WeChat?community=https://balink-poc-developer-edition.eu8.force.com&amp;startURL=%2Fservices%2Foauth2%2Fauthorize%3Fresponse_type%3Dtoken%26client_id%3D3MVG9TSaZ8P6zP1r474LN9_pGmC6bFgzqocTGcnL7BskII.BOIgqTdg..1GQTIa4qm_EuMgpx6Br.hqrgvk9.%26redirect_uri%3Dhttps%3A%2F%2Fembedded-login-demo.herokuapp.com%2F%26state%3Dhttps%3A%2F%2Fembedded-login-demo.herokuapp.com%2F"><img src="https://c.eu8.content.force.com/servlet/servlet.ImageServer?id=0150N000006rkeu&oid=00D0N000001bziH"></a>
-		<div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;"></div>
 	</div>
 	
 	<header>

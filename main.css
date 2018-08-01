@@ -44,6 +44,8 @@ h1 {
   padding-left: 30px;
   background-color: #222;
   align-items: center;
+  padding-right: 83px;
+  justify-content: flex-end;
 }
 
 .login-header .login-elem {
@@ -61,6 +63,16 @@ h1 {
   display:block;
   height:29px;
   border-radius: 5px;
+}
+
+.sfid-button {
+  background-color: #222;
+  color: white;
+  padding: 0;
+  border-radius: 5px;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 header {
