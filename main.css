@@ -49,8 +49,7 @@ h1 {
 }
 
 .login-header .login-elem {
-  margin: 10px;
-  margin-top: 10px;
+  margin: 5px;
   color: white;
   text-decoration: none;
 }
@@ -61,18 +60,24 @@ h1 {
   position:relative;
   zoom:1;
   display:block;
-  height:29px;
+  height: 40px;
   border-radius: 5px;
 }
 
 .sfid-button {
   background-color: #222;
   color: white;
-  padding: 0;
+  padding: 10px;
   border-radius: 5px;
   border: 0;
   font-family: inherit;
   font-size: inherit;
+  padding-right: 12px;
+  margin-right: 5px;
+}
+
+.sfid-social-buttonimg {
+  height: 40px;
 }
 
 header {
