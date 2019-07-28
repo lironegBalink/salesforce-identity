@@ -96,9 +96,9 @@
       </div>
     </header>
 	  
-	  	<body>
-		<iframe  src="https://socialmed-louisvuitton.cs30.force.com/eng-e1/mylv/login"/>
-	</body>
+
+	<iframe  src="https://socialmed-louisvuitton.cs30.force.com/eng-e1/mylv/login" height="100%" width="100%"/>
+
    
     <footer>
       <div class="trailer-links">
